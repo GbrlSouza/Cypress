@@ -4,12 +4,16 @@
   "description": "Este repositório está configurado para utilizar **Cypress** para testes automatizados de front-end e **GitHub Actions** para integração contínua (CI).",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "cy:open:chrome": "cypress open --browser chrome",
+    "cy:run:chrome": "cypress run --browser chrome"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^13.15.2"
+    "cypress": "^13.15.2",
+    "cypress-mochawesome-reporter": "^3.8.2",
+    "cypress-multi-reporters": "^2.0.4",
+    "mocha-junit-reporter": "^2.2.1"
   }
 }
